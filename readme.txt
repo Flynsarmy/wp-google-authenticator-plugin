@@ -1,5 +1,5 @@
 === Google Authenticator ===
-Contributors: ivankk
+Contributors: Flynsarmy
 Tags: authentication,otp,password,security,login,android,iphone,blackberry
 Requires at least: 4.5
 Tested up to: 6.0
@@ -17,15 +17,15 @@ If you are security aware, you may already have the Google Authenticator app ins
 
 The two-factor authentication requirement can be enabled on a per-user basis. You could enable it for your administrator account, but log in as usual with less privileged accounts.
 
-If You need to maintain your blog using an Android/iPhone app, or any other software using the XMLRPC interface, you can enable the App password feature in this plugin, 
+If You need to maintain your blog using an Android/iPhone app, or any other software using the XMLRPC interface, you can enable the App password feature in this plugin,
 but please note that enabling the App password feature will make your blog less secure.
 
 == Installation ==
 1. Make sure your webhost is capable of providing accurate time information for PHP/WordPress, ie. make sure a NTP daemon is running on the server.
 2. Install and activate the plugin.
 3. Enter a description on the Users -> Profile and Personal options page, in the Google Authenticator section.
-4. Scan the generated QR code with your phone, or enter the secret manually, remember to pick the time based one.  
-You may also want to write down the secret on a piece of paper and store it in a safe place. 
+4. Scan the generated QR code with your phone, or enter the secret manually, remember to pick the time based one.
+You may also want to write down the secret on a piece of paper and store it in a safe place.
 5. Remember to hit the **Update profile** button at the bottom of the page before leaving the Personal options page.
 6. That's it, your WordPress blog is now a little more secure.
 
@@ -61,8 +61,8 @@ Github project here : https://github.com/gbraad/gauth
 
 = Can I create backupcodes ? =
 
-No, but if you're using an Android smartphone you can replace the Google Authenticator app with [Authenticator Plus](https://play.google.com/store/apps/details?id=com.mufri.authenticatorplus).  
-It's a really nice app that can import your existing settings, sync between devices and backup/restore using your sd-card.  
+No, but if you're using an Android smartphone you can replace the Google Authenticator app with [Authenticator Plus](https://play.google.com/store/apps/details?id=com.mufri.authenticatorplus).
+It's a really nice app that can import your existing settings, sync between devices and backup/restore using your sd-card.
 It's not a free app, but it's well worth the money.
 
 = Any known incompatabilities ? =
@@ -107,18 +107,18 @@ please remember to remove the "Check credentials on all login attempts" checkmar
 = 0.48 =
 * Security fix / compatability with WordPress 4.5
 
-= 0.47 =  
+= 0.47 =
 * Google chart API replaced with jquery-qrcode
 * QR codes now contain a heading saying WordPress (Feature request by Flemming Mahler)
 * Danish translation & updated .pot file.
 * Plugin now logs login attempts recognized as Man-in-the-middle attacks.
 
-= 0.46 =  
+= 0.46 =
 * Man-in-the-middle attack protection added.
 * Show warning before displaying the QR code.
 * FAQ updated.
 
-= 0.45 =  
+= 0.45 =
 * Spaces in the description field should now work on iPhones.
 * Some depricated function calls replaced.
 * Code inputfield easier to use for .jp users now.
@@ -126,48 +126,48 @@ please remember to remove the "Check credentials on all login attempts" checkmar
 * App password hash function switched to one that doesn't have rainbow tables available.
 * PHP notices occurring during app password login removed.
 
-= 0.44 =  
+= 0.44 =
 * Installation/FAQ section updated.
-* Simplified Chinese translation by Kaijia Feng added. 
+* Simplified Chinese translation by Kaijia Feng added.
 * Tabindex on loginpage removed, no longer needed, was used by older WordPress installations.
 * Inputfield renamed to "googleotp".
 * Defaultdescription changed to "WordPressBlog" to avoid trouble for iPhone users.
 * Compatibility with Ryan Hellyer's plugin http://geek.ryanhellyer.net/products/deactivate-google-authenticator/
 * Must enter all 6 code digits.
 
-= 0.43 =  
+= 0.43 =
 * It's now possible for an admin to hide the Google Authenticaator settings on a per-user basis. (Feature request by : Skate-O)
 
-= 0.42 =  
+= 0.42 =
 * Autocomplete disabled on code input field. (Feature request by : hiphopsmurf)
 
-= 0.41 =  
+= 0.41 =
 * Italian translation by Aldo Latino added.
 
-= 0.40 =  
+= 0.40 =
 * Bugfix, typo corrected and PHP notices removed. Thanks to Dion Hulse for his patch.
 
-= 0.39 =  
+= 0.39 =
 * Bugfix, Description was not saved to WordPress database when updating profile. Thanks to xxdesmus for noticing this.
 
-= 0.38 =  
+= 0.38 =
 * Usability fix, input field for codes changed from password to text type.
 
-= 0.37 =  
+= 0.37 =
 * The plugin now supports "relaxed mode" when authenticating. If selected, codes from 4 minutes before and 4 minutes after will work. 30 seconds before and after is still the default setting.
 
-= 0.36 =  
+= 0.36 =
 * Bugfix, now an App password can only be used for XMLRPC/APP-Request logins.
 
-= 0.35 =  
+= 0.35 =
 * Initial WordPress app support added (XMLRPC).
 
-= 0.30 =  
+= 0.30 =
 * Code cleanup
 * Changed generation of secret key, to no longer have requirement of SHA256 on the server
 * German translation
 
-= 0.20 =  
+= 0.20 =
 * Initial release
 
 
